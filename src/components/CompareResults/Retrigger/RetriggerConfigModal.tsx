@@ -29,6 +29,7 @@ function RetriggerCountSelect({
         defaultValue={0}
         label={label}
         sx={{ height: 32 }}
+        size='small'
       >
         {Array.from({ length: 10 }).map((_, count) => (
           <MenuItem key={count} value={count}>
