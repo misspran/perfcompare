@@ -113,7 +113,7 @@ exports[`Results View The table should match snapshot and other elements should 
               aria-haspopup="listbox"
               aria-label="Framework"
               aria-labelledby="mui-component-select-framework"
-              class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1hw1663-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+              class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1475ffh-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
               id="mui-component-select-framework"
               role="combobox"
               tabindex="0"
@@ -171,7 +171,7 @@ exports[`Results View The table should match snapshot and other elements should 
               aria-expanded="false"
               aria-haspopup="listbox"
               aria-label="Filter by revision"
-              class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1hw1663-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
+              class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1475ffh-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input"
               role="combobox"
               tabindex="0"
             >

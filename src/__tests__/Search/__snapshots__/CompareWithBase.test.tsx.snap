@@ -76,7 +76,7 @@ exports[`Compare With Base renders correctly when there are no results: Initial 
               aria-expanded="false"
               aria-haspopup="listbox"
               aria-labelledby="repo-dropdown--base"
-              class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-10dumzv-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
+              class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-kbx4kf-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
               role="combobox"
               tabindex="0"
             >
@@ -381,7 +381,7 @@ exports[`Compare With Base renders correctly when there are no results: Initial 
               aria-expanded="false"
               aria-haspopup="listbox"
               aria-labelledby="repo-dropdown--new"
-              class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-10dumzv-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
+              class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-kbx4kf-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
               role="combobox"
               tabindex="0"
             >
@@ -862,7 +862,7 @@ exports[`Compare With Base should have an edit mode in Results View: After click
               aria-expanded="false"
               aria-haspopup="listbox"
               aria-labelledby="repo-dropdown--base"
-              class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-10dumzv-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
+              class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-kbx4kf-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
               role="combobox"
               tabindex="0"
             >
@@ -1167,7 +1167,7 @@ exports[`Compare With Base should have an edit mode in Results View: After click
               aria-expanded="false"
               aria-haspopup="listbox"
               aria-labelledby="repo-dropdown--new"
-              class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-10dumzv-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
+              class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-kbx4kf-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
               role="combobox"
               tabindex="0"
             >
@@ -1371,7 +1371,7 @@ exports[`Compare With Base should have an edit mode in Results View: After click
               aria-expanded="false"
               aria-haspopup="listbox"
               aria-labelledby="repo-dropdown--base"
-              class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-10dumzv-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
+              class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-kbx4kf-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
               role="combobox"
               tabindex="0"
             >
@@ -1676,7 +1676,7 @@ exports[`Compare With Base should have an edit mode in Results View: After click
               aria-expanded="false"
               aria-haspopup="listbox"
               aria-labelledby="repo-dropdown--new"
-              class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-10dumzv-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
+              class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-kbx4kf-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
               role="combobox"
               tabindex="0"
             >
@@ -2044,7 +2044,7 @@ exports[`Compare With Base should have an edit mode in Results View: Initial sta
               aria-expanded="false"
               aria-haspopup="listbox"
               aria-labelledby="repo-dropdown--base"
-              class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-10dumzv-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
+              class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-kbx4kf-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
               role="combobox"
               tabindex="0"
             >
@@ -2349,7 +2349,7 @@ exports[`Compare With Base should have an edit mode in Results View: Initial sta
               aria-expanded="false"
               aria-haspopup="listbox"
               aria-labelledby="repo-dropdown--new"
-              class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-10dumzv-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
+              class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-kbx4kf-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
               role="combobox"
               tabindex="0"
             >
@@ -2721,7 +2721,7 @@ exports[`Compare With Base should have an edit mode in Results View: after remov
               aria-expanded="false"
               aria-haspopup="listbox"
               aria-labelledby="repo-dropdown--base"
-              class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-10dumzv-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
+              class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-kbx4kf-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
               role="combobox"
               tabindex="0"
             >
@@ -2866,7 +2866,7 @@ exports[`Compare With Base should have an edit mode in Results View: after remov
               aria-expanded="false"
               aria-haspopup="listbox"
               aria-labelledby="repo-dropdown--new"
-              class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-10dumzv-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
+              class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-kbx4kf-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
               role="combobox"
               tabindex="0"
             >
@@ -3270,7 +3270,7 @@ exports[`Compare With Base should have an edit mode in Results View: after remov
               aria-expanded="false"
               aria-haspopup="listbox"
               aria-labelledby="repo-dropdown--base"
-              class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-10dumzv-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
+              class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-kbx4kf-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
               role="combobox"
               tabindex="0"
             >
@@ -3575,7 +3575,7 @@ exports[`Compare With Base should have an edit mode in Results View: after remov
               aria-expanded="false"
               aria-haspopup="listbox"
               aria-labelledby="repo-dropdown--new"
-              class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-10dumzv-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
+              class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-kbx4kf-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
               role="combobox"
               tabindex="0"
             >
@@ -3881,7 +3881,7 @@ exports[`Compare With Base should remove the checked revision once X button is c
                             aria-expanded="false"
                             aria-haspopup="listbox"
                             aria-labelledby="repo-dropdown--base"
-                            class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input css-12fteis-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
+                            class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input css-19kcyqu-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
                             role="combobox"
                             tabindex="0"
                           >
@@ -4026,7 +4026,7 @@ exports[`Compare With Base should remove the checked revision once X button is c
                             aria-expanded="false"
                             aria-haspopup="listbox"
                             aria-labelledby="repo-dropdown--new"
-                            class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input css-12fteis-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
+                            class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input css-19kcyqu-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
                             role="combobox"
                             tabindex="0"
                           >
@@ -4165,7 +4165,7 @@ exports[`Compare With Base should remove the checked revision once X button is c
                         aria-haspopup="listbox"
                         aria-label="Framework"
                         aria-labelledby="select-framework-label mui-component-select-framework"
-                        class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input css-12fteis-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
+                        class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input css-19kcyqu-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
                         id="mui-component-select-framework"
                         role="combobox"
                         tabindex="0"
@@ -4323,7 +4323,7 @@ exports[`Compare With Base should remove the checked revision once X button is c
                             aria-expanded="false"
                             aria-haspopup="listbox"
                             aria-labelledby="base-repo-dropdown--overtime mui-component-select-baseRepo"
-                            class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input css-12fteis-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
+                            class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input css-19kcyqu-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
                             id="mui-component-select-baseRepo"
                             role="combobox"
                             tabindex="0"
@@ -4368,7 +4368,7 @@ exports[`Compare With Base should remove the checked revision once X button is c
                             aria-expanded="false"
                             aria-haspopup="listbox"
                             aria-labelledby="select-timerange-label mui-component-select-selectedTimeRange"
-                            class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input css-12fteis-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
+                            class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input css-19kcyqu-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
                             id="mui-component-select-selectedTimeRange"
                             role="combobox"
                             tabindex="0"
@@ -4450,7 +4450,7 @@ exports[`Compare With Base should remove the checked revision once X button is c
                             aria-expanded="false"
                             aria-haspopup="listbox"
                             aria-labelledby="repo-dropdown--overtime"
-                            class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input css-12fteis-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
+                            class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input css-19kcyqu-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
                             role="combobox"
                             tabindex="0"
                           >
@@ -4588,7 +4588,7 @@ exports[`Compare With Base should remove the checked revision once X button is c
                         aria-haspopup="listbox"
                         aria-label="Framework"
                         aria-labelledby="select-framework-label mui-component-select-framework"
-                        class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input css-12fteis-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
+                        class="MuiSelect-select MuiSelect-standard MuiInputBase-input MuiInput-input css-19kcyqu-MuiNativeSelect-root-MuiSelect-select-MuiInputBase-input-MuiInput-input"
                         id="mui-component-select-framework"
                         role="combobox"
                         tabindex="0"
