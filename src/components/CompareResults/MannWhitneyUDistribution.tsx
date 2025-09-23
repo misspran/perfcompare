@@ -3,7 +3,7 @@ import Grid from '@mui/material/Grid';
 import RunValues from './RunValues';
 import type { CompareResultsItem, CompareResultsMannWhitneyUItem } from '../../types/state';
 
-function Distribution(props: DistributionProps) {
+function MannWhitneyUDistribution(props: MannWhitneyUDistributionProps) {
   const { result } = props;
   const {
     base_runs: baseRuns,
@@ -12,10 +12,11 @@ function Distribution(props: DistributionProps) {
     new_runs_replicates: newRunsReplicates,
     base_app: baseApplication,
     new_app: newApplication,
-    base_avg_value: baseAvg,
-    new_avg_value: newAvg,
-    base_median_value: baseMedian,
-    new_median_value: newMedian,
+    mann_pvalue: pValue,
+    base_mean: baseMean,
+    new_mean: newMean,
+    base_median: baseMedian,
+    new_median: newMedian,
     base_stddev: baseStddev,
     new_stddev: newStddev,
     base_stddev_pct: baseStddevPercent,
@@ -31,7 +32,7 @@ function Distribution(props: DistributionProps) {
 
   const baseRevisionRuns = {
     name: 'Base',
-    avg: baseAvg,
+    avg: baseMean,
     median: baseMedian,
     values: baseValues,
     application: baseApplication,
@@ -45,7 +46,7 @@ function Distribution(props: DistributionProps) {
 
   const newRevisionRuns = {
     name: 'New',
-    avg: newAvg,
+    avg: newMean,
     median: newMedian,
     values: newValues,
     application: newApplication,
@@ -62,7 +63,6 @@ function Distribution(props: DistributionProps) {
           sm: 6,
         }}
       >
-        <RunValues revisionRuns={baseRevisionRuns} />
       </Grid>
       <Grid
         size={{
@@ -70,14 +70,13 @@ function Distribution(props: DistributionProps) {
           sm: 6,
         }}
       >
-        <RunValues revisionRuns={newRevisionRuns} />
       </Grid>
     </Grid>
   );
 }
 
-interface DistributionProps {
-  result: CompareResultsItem;
+interface MannWhitneyUDistributionProps {
+  result: CompareResultsMannWhitneyUItem;
 }
 
-export default Distribution;
+export default MannWhitneyUDistribution;

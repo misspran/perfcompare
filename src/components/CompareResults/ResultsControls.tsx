@@ -10,6 +10,7 @@ import { Strings } from '../../resources/Strings';
 import type { CompareResultsItem } from '../../types/state';
 import type { Framework } from '../../types/types';
 import FrameworkDropdown from '../Shared/FrameworkDropdown';
+import TestVersionDropdown from '../Shared/TestVersionDropdown';
 
 const controlsStyles = style({
   display: 'flex',
@@ -23,13 +24,17 @@ interface Props {
   resultsPromise: Promise<CompareResultsItem[][]>;
   onSearchTermChange: (searchTerm: string) => unknown;
   onFrameworkChange: (frameworkId: Framework['id']) => unknown;
+  onTestVersionChange: (testType: string) => void;
+  testType: string;
 }
 export default function ResultsControls({
   initialSearchTerm,
   frameworkId,
   resultsPromise,
+  testType,
   onSearchTermChange,
   onFrameworkChange,
+  onTestVersionChange
 }: Props) {
   const mode = useAppSelector((state) => state.theme.mode);
   return (
@@ -54,6 +59,17 @@ export default function ResultsControls({
             variant='outlined'
             mode={mode}
             onChange={onFrameworkChange}
+          />
+        </FormControl>
+      </Grid>
+      <Grid size='grow'>
+        <FormControl sx={{ width: '100%' }}>
+          <TestVersionDropdown
+            testType={testType}
+            size='small'
+            variant='outlined'
+            mode={mode}
+            onChange={onTestVersionChange}
           />
         </FormControl>
       </Grid>

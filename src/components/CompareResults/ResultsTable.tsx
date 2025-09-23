@@ -158,6 +158,7 @@ export default function ResultsTable() {
   const initialSearchTerm = rawSearchParams.get('search') ?? '';
   const [searchTerm, setSearchTerm] = useState(initialSearchTerm);
   const [frameworkIdVal, setFrameworkIdVal] = useState(frameworkId);
+  const [testVersionVal, setTestVersion] = useState('student-t');
 
   const onFrameworkChange = (newFrameworkId: Framework['id']) => {
     setFrameworkIdVal(newFrameworkId);
@@ -174,6 +175,13 @@ export default function ResultsTable() {
       rawSearchParams.delete('search');
     }
     updateRawSearchParams(rawSearchParams);
+  };
+
+  const onTestVersionChange = (testVersion: string) => {
+    setTestVersion(testVersion);
+
+    searchParams.set('testVersion', testVersion);
+    setSearchParams(searchParams);
   };
 
   const rowGridTemplateColumns = columnsConfiguration
@@ -194,8 +202,10 @@ export default function ResultsTable() {
           initialSearchTerm={initialSearchTerm}
           frameworkId={frameworkIdVal}
           resultsPromise={resultsPromise}
+          testType={testVersionVal}
           onSearchTermChange={onSearchTermChange}
           onFrameworkChange={onFrameworkChange}
+          onTestVersionChange={onTestVersionChange}
         />
         <TableHeader
           columnsConfiguration={columnsConfiguration}

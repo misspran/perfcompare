@@ -54,6 +54,7 @@ export type SubtestsRevisionsHeader = {
 };
 
 export type CompareResultsItem = {
+  test_version?: string;
   base_rev: string;
   new_rev: string;
   base_app: string;
@@ -86,6 +87,62 @@ export type CompareResultsItem = {
   confidence: number | null;
   confidence_text: ConfidenceText | null;
   delta_value: number;
+  delta_percentage: number;
+  magnitude: number;
+  is_improvement: boolean;
+  test: string;
+  option_name: string;
+  extra_options: string;
+  noise_metric: boolean;
+  is_confident: boolean;
+  graphs_link: string;
+  is_regression: boolean;
+  is_meaningful: boolean;
+  more_runs_are_needed: boolean;
+  /*
+  Each test has a signature and each signature may or may not have a parent_signature.
+  If a signature has a parent_signature then we are looking at a subtest. For regular tests this field will be null.
+  */
+  base_parent_signature: number | null;
+  new_parent_signature: number | null;
+  base_signature_id: number;
+  new_signature_id: number;
+  has_subtests: boolean;
+};
+
+export type CompareResultsMannWhitneyUItem = {
+  test_version?: string;
+  base_rev: string;
+  new_rev: string;
+  base_app: string;
+  new_app: string;
+  header_name: string;
+  base_retriggerable_job_ids: number[];
+  new_retriggerable_job_ids: number[];
+  base_measurement_unit: MeasurementUnit;
+  new_measurement_unit: MeasurementUnit;
+  platform: Platform;
+  suite: string;
+  framework_id: Framework['id'];
+  new_repository_name: Repository['name'];
+  base_repository_name: Repository['name'];
+  new_runs: number[];
+  base_runs: number[];
+  new_runs_replicates: number[];
+  base_runs_replicates: number[];
+  is_complete: boolean;
+  base_mean: number;
+  new_mean: number;
+  base_median: number;
+  new_median: number;
+  base_stddev: number;
+  new_stddev: number;
+  base_stddev_pct: number;
+  new_stddev_pct: number;
+  new_is_better: boolean;
+  lower_is_better: boolean;
+  cliffs_delta: number;
+  mann_pvalue: number;
   delta_percentage: number;
   magnitude: number;
   is_improvement: boolean;

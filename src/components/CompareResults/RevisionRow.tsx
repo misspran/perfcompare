@@ -18,7 +18,7 @@ import RevisionRowExpandable from './RevisionRowExpandable';
 import { compareView, compareOverTimeView } from '../../common/constants';
 import { Strings } from '../../resources/Strings';
 import { FontSize, Spacing } from '../../styles';
-import type { CompareResultsItem, PlatformShortName } from '../../types/state';
+import type { CompareResultsItem, CompareResultsMannWhitneyUItem, PlatformShortName } from '../../types/state';
 import { formatNumber } from '../../utils/format';
 import {
   getPlatformShortName,
@@ -29,6 +29,7 @@ import AndroidIcon from '../Shared/Icons/AndroidIcon';
 import LinuxIcon from '../Shared/Icons/LinuxIcon';
 import SubtestsIcon from '../Shared/Icons/SubtestsIcon';
 import WindowsIcon from '../Shared/Icons/WindowsIcon';
+import RevisionRowExpandableMannWhitneyU from './RevisionRowExpandableMannWhitneyU';
 
 const typography = style({
   fontFamily: 'SF Pro',
@@ -146,7 +147,7 @@ const confidenceIcons = {
   High: <KeyboardArrowUpIcon sx={{ color: 'icons.success' }} />,
 };
 
-const getSubtestsCompareWithBaseLink = (result: CompareResultsItem) => {
+const getSubtestsCompareWithBaseLink = (result: CompareResultsItem | CompareResultsMannWhitneyUItem) => {
   const params = new URLSearchParams({
     baseRev: result.base_rev,
     baseRepo: result.base_repository_name,
@@ -160,7 +161,7 @@ const getSubtestsCompareWithBaseLink = (result: CompareResultsItem) => {
   return `/subtests-compare-results?${params.toString()}`;
 };
 
-const getSubtestsCompareOverTimeLink = (result: CompareResultsItem) => {
+const getSubtestsCompareOverTimeLink = (result: CompareResultsItem | CompareResultsMannWhitneyUItem) => {
   // Fetching the interval value directly from the URL avoids a
   // spurious render due to react-router context changing. It's not usually a
   // problem, but because this component can have a lot of instances, this is a
@@ -376,12 +377,14 @@ function RevisionRow(props: RevisionRowProps) {
         </Box>
       </Box>
       {expanded && <RevisionRowExpandable id={id} result={result} />}
+      {expanded && <RevisionRowExpandableMannWhitneyU id={id} resultStats={resultStats} />}
     </>
   );
 }
 
 interface RevisionRowProps {
   result: CompareResultsItem;
+  resultStats?: CompareResultsMannWhitneyUItem;
   gridTemplateColumns: string;
   view: typeof compareView | typeof compareOverTimeView;
   replicates: boolean;

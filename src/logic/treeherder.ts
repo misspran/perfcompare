@@ -13,6 +13,8 @@ import { Framework, TimeRange } from '../types/types';
 
 export const treeherderBaseURL = 'https://treeherder.mozilla.org';
 
+// export const treeherderBaseURL = 'http://localhost:8000';
+
 type FetchProps = {
   baseRepo: Repository['name'];
   baseRev: string;
