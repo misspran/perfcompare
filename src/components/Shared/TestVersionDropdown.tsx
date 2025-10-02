@@ -1,6 +1,5 @@
 import MenuItem from '@mui/material/MenuItem';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
-
 import { ThemeMode } from '../../types/state';
 
 interface TestVersionDropdownProps {
