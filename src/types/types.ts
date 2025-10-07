@@ -1,4 +1,4 @@
-import { CompareResultsItem } from './state';
+import { CompareResultsItem, MannWhitneyResultsItem } from './state';
 
 /* --- Types for configuring the behavior and styles of the results tables columns --- */
 
@@ -338,3 +338,63 @@ export type TokenBearer = {
   access_token: string;
   token_type: 'Bearer';
 };
+
+/* --- Types for configuring the behavior and styles of the results tables columns for Mann-Whitney results --- */
+
+// This interface is used for a column that can be sorted.
+interface SortableMannWhitneyColumnMixin {
+  name: string;
+  sortFunction: (
+    resultA: MannWhitneyResultsItem,
+    resultB: MannWhitneyResultsItem,
+  ) => number;
+}
+
+// These types represent actual column types, by mixing a BasicColumn with the
+// mixins for Filterable and Sortable columns.
+// The "&" intersection works better than interface "extends" here, because the
+// "name" property has different types in the interfaces, so Typescript bails
+// out when using "extends".
+export type FilterableMannWhitneyColumn = BasicColumn &
+  FilterableMannWhitneyColumnMixin;
+export type SortableMannWhitneyColumn = BasicColumn &
+  SortableMannWhitneyColumnMixin;
+export type FilterableAndSortableMannWhitneyColumn =
+  FilterableMannWhitneyColumn & SortableMannWhitneyColumnMixin;
+
+// A column can be one of these types.
+export type CompareResultsMannWhitneyTableColumn =
+  | BasicColumn
+  | FilterableMannWhitneyColumn
+  | SortableMannWhitneyColumn
+  | FilterableAndSortableMannWhitneyColumn;
+
+// The full configuration for a results table.
+export type CompareResultsMannWhitneyTableConfig =
+  CompareResultsMannWhitneyTableColumn[];
+
+/* --- Types for configuring the behavior and styles of the results tables columns for Mann-Whitney results --- */
+
+// This interface is used for a column that can be filtered.
+interface FilterableMannWhitneyColumnMixin {
+  name: string;
+  // Always true for filterable columns.
+  filter: true;
+  // All values this column might have.
+  possibleValues: Array<{ label: string; key: string }>;
+  // This function returns whether this result matches the value for this column.
+  matchesFunction: (
+    this: FilterableMannWhitneyColumnMixin,
+    result: MannWhitneyResultsItem,
+    value: string,
+  ) => boolean;
+}
+
+// This interface is used for a column that can be sorted.
+interface SortableMannWhitneyColumnMixin {
+  name: string;
+  sortFunction: (
+    resultA: MannWhitneyResultsItem,
+    resultB: MannWhitneyResultsItem,
+  ) => number;
+}

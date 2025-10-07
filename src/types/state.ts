@@ -208,7 +208,7 @@ export type MannWhitneyResultsItem = {
   shapiro_wilk_test_new: StatisticsTestItem; // Shapiro-Wilk: Normality test
   shapiro_wilk_warnings: string[]; // warnings about normality for both base and new
   mann_whitney_test: StatisticsTestItem; // Mann-Whitney-U: Tests the null hypothesis, p-value to display here
-  cliffs_delta: number;
+  cliffs_delta?: number;
   cliffs_interpretation: string;
   cles?: CLESItem; // CLES: Common Language Effect Size, statistical effect interpretation from Mann-Whitney U
   kde_new: KDEItem; // KDE plots and summary plot with ISJ bandwidth for new runs
