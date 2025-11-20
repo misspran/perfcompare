@@ -178,9 +178,7 @@ function RevisionRowExpandable(props: RevisionRowExpandableProps) {
                 <b>Comparison result</b>:{' '}
                 {testVersion === MANN_WHITNEY_U
                   ? (result as MannWhitneyResultsItem).direction_of_change
-                  : newIsBetter
-                    ? 'better'
-                    : 'worse'}{' '}
+                  : newIsBetter}{' '}
                 ({lowerIsBetter ? 'lower' : 'higher'} is better)
               </Box>
               {/******* student t test rendering **************/}

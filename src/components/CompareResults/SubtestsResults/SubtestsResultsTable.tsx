@@ -211,13 +211,13 @@ const columnsMannWhitneyConfiguration: CompareMannWhitneyResultsTableConfig = [
     matchesFunction(result, valueKey) {
       switch (valueKey) {
         case 'improvement':
-          return result.direction_of_change === 'better';
+          return result.direction_of_change === 'improvement';
         case 'regression':
-          return result.direction_of_change === 'worse';
+          return result.direction_of_change === 'regression';
         default:
           return (
-            result.direction_of_change !== 'worse' &&
-            result.direction_of_change !== 'better'
+            result.direction_of_change !== 'regression' &&
+            result.direction_of_change !== 'improvement'
           );
       }
     },
@@ -266,9 +266,7 @@ const columnsMannWhitneyConfiguration: CompareMannWhitneyResultsTableConfig = [
       if (!resultA.cles?.cles || !resultB.cles?.cles) {
         return 0;
       } else {
-        return (
-          Math.abs(resultA.cles?.cles) - Math.abs(resultB.cles?.cles ?? 0)
-        );
+        return Math.abs(resultA.cles?.cles) - Math.abs(resultB.cles?.cles ?? 0);
       }
     },
     // tooltip: 'Mann Whitney U test p-value indicating statistical significance.',
